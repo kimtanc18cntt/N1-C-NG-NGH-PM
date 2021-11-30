@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BA8E8849-65FD-4354-845E-E680AFE4F1E2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NHAHANGBUFFET</RootNamespace>
+    <AssemblyName>NHAHANGBUFFET</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraEditors.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\BanMod.cs" />
+    <Compile Include="BLL\connection.cs" />
+    <Compile Include="BLL\Dangkymod.cs" />
+    <Compile Include="BLL\GoiMonMod.cs" />
+    <Compile Include="BLL\KhachHangMod.cs" />
+    <Compile Include="BLL\KhuVucMod.cs" />
+    <Compile Include="BLL\KhuyenMaiMod.cs" />
+    <Compile Include="BLL\LoaiThucDonMod.cs" />
+    <Compile Include="BLL\NhanVienMod.cs" />
+    <Compile Include="BLL\ThucDonMod.cs" />
+    <Compile Include="BLL\ThuChiMod.cs" />
+    <Compile Include="DAL\BanCtrl.cs" />
+    <Compile Include="DAL\DangkyCtrl.cs" />
+    <Compile Include="DAL\GoiMonCtrl.cs" />
+    <Compile Include="DAL\KhachHangCtrl.cs" />
+    <Compile Include="DAL\KhuVucCtrl.cs" />
+    <Compile Include="DAL\KhuyenMaiCtrl.cs" />
+    <Compile Include="DAL\LoaiThucDonCtrl.cs" />
+    <Compile Include="DAL\NhanvienCtrl.cs" />
+    <Compile Include="DAL\ThucDonCtrl.cs" />
+    <Compile Include="DAL\ThuChiCtrl.cs" />
+    <Compile Include="UI\dangky.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\dangky.Designer.cs">
+      <DependentUpon>dangky.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\uctDanhSachTD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\uctDanhSachTD.Designer.cs">
+      <DependentUpon>uctDanhSachTD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\uctGioiThieu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\uctGioiThieu.Designer.cs">
+      <DependentUpon>uctGioiThieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\uctGoiMon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\uctGoiMon.Designer.cs">
+      <DependentUpon>uctGoiMon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\uctKhachHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\uctKhachHang.Designer.cs">
+      <DependentUpon>uctKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\uctKhuVuc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\uctKhuVuc.Designer.cs">
+      <DependentUpon>uctKhuVuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\uctKhuyenMai.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\uctKhuyenMai.Designer.cs">
+      <DependentUpon>uctKhuyenMai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\uctLoaiThucDon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\uctLoaiThucDon.Designer.cs">
+      <DependentUpon>uctLoaiThucDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\uctMonDaGoi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\uctMonDaGoi.Designer.cs">
+      <DependentUpon>uctMonDaGoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\uctNhanvien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\uctNhanvien.Designer.cs">
+      <DependentUpon>uctNhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\uctSearchNhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\uctSearchNhanVien.Designer.cs">
+      <DependentUpon>uctSearchNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\uctThucDon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\uctThucDon.Designer.cs">
+      <DependentUpon>uctThucDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\uctThuChi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\uctThuChi.Designer.cs">
+      <DependentUpon>uctThuChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\utcBan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\utcBan.Designer.cs">
+      <DependentUpon>utcBan.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\dangky.resx">
+      <DependentUpon>dangky.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI\uctDanhSachTD.resx">
+      <DependentUpon>uctDanhSachTD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\uctGioiThieu.resx">
+      <DependentUpon>uctGioiThieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\uctGoiMon.resx">
+      <DependentUpon>uctGoiMon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\uctKhachHang.resx">
+      <DependentUpon>uctKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\uctKhuVuc.resx">
+      <DependentUpon>uctKhuVuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\uctKhuyenMai.resx">
+      <DependentUpon>uctKhuyenMai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\uctLoaiThucDon.resx">
+      <DependentUpon>uctLoaiThucDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\uctMonDaGoi.resx">
+      <DependentUpon>uctMonDaGoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\uctNhanvien.resx">
+      <DependentUpon>uctNhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\uctSearchNhanVien.resx">
+      <DependentUpon>uctSearchNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\uctThucDon.resx">
+      <DependentUpon>uctThucDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\uctThuChi.resx">
+      <DependentUpon>uctThuChi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\utcBan.resx">
+      <DependentUpon>utcBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\70317.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2039893.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top-20-nha-hang-co-khong-gian-dep-noi-tieng-nhat-o-tphcm-23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z2579502387155_7c9e244f8a362afc4ae22d4e58beb8fc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %283%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hinh-nen-powerpoint-dep-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\incredibly-beautiful-sunset-sun-lake-sunrise-landscape-panorama-nature-sky-amazing-colorful-clouds-fantasy-design-115177001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\331.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\442.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-food-food-snack-eating-goods-image_14522.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1d8380cfc453af6571f66571bb088b98.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3333333333333.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\huy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sưa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\them.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baomattk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15700936.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thiet-ke-logo-nha-hang-06.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\222.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4421.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3311.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4422.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baomat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\v462-n-130-textureidea_1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
