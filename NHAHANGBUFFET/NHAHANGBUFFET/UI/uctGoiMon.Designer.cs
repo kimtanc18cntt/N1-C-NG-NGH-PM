@@ -67,9 +67,9 @@
             // 
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.lblTongTien);
-            this.groupBox2.Location = new System.Drawing.Point(812, 133);
+            this.groupBox2.Location = new System.Drawing.Point(744, 133);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(313, 46);
+            this.groupBox2.Size = new System.Drawing.Size(381, 46);
             this.groupBox2.TabIndex = 55;
             this.groupBox2.TabStop = false;
             // 
@@ -78,7 +78,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label2.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label2.Location = new System.Drawing.Point(-38, 29);
+            this.label2.Location = new System.Drawing.Point(6, 27);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(156, 16);
             this.label2.TabIndex = 51;
@@ -186,7 +186,7 @@
             this.btnMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenu.ImageIndex = 3;
             this.btnMenu.ImageList = this.imageList1;
-            this.btnMenu.Location = new System.Drawing.Point(558, 185);
+            this.btnMenu.Location = new System.Drawing.Point(505, 185);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(120, 58);
             this.btnMenu.TabIndex = 53;
@@ -200,14 +200,13 @@
             this.btnIn.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIn.Image = ((System.Drawing.Image)(resources.GetObject("btnIn.Image")));
             this.btnIn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIn.Location = new System.Drawing.Point(936, 185);
+            this.btnIn.Location = new System.Drawing.Point(900, 185);
             this.btnIn.Name = "btnIn";
             this.btnIn.Size = new System.Drawing.Size(120, 58);
             this.btnIn.TabIndex = 50;
             this.btnIn.Text = "In hóa đơn";
             this.btnIn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnIn.UseVisualStyleBackColor = true;
-            this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
             // 
             // btnGoimon
             // 
@@ -215,7 +214,7 @@
             this.btnGoimon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGoimon.ImageKey = "catering (1).png";
             this.btnGoimon.ImageList = this.imageList1;
-            this.btnGoimon.Location = new System.Drawing.Point(684, 185);
+            this.btnGoimon.Location = new System.Drawing.Point(658, 185);
             this.btnGoimon.Name = "btnGoimon";
             this.btnGoimon.Size = new System.Drawing.Size(120, 58);
             this.btnGoimon.TabIndex = 51;
@@ -230,7 +229,7 @@
             this.btnTinhtien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTinhtien.ImageKey = "21216-200.png";
             this.btnTinhtien.ImageList = this.imageList1;
-            this.btnTinhtien.Location = new System.Drawing.Point(810, 185);
+            this.btnTinhtien.Location = new System.Drawing.Point(786, 185);
             this.btnTinhtien.Name = "btnTinhtien";
             this.btnTinhtien.Size = new System.Drawing.Size(120, 58);
             this.btnTinhtien.TabIndex = 52;
@@ -243,7 +242,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::NHAHANGBUFFET.Properties.Resources._1d8380cfc453af6571f66571bb088b98;
+            this.BackgroundImage = global::NHAHANGBUFFET.Properties.Resources.v462_n_130_textureidea_1;
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnMenu);
@@ -254,7 +253,7 @@
             this.Controls.Add(this.btnTinhtien);
             this.Controls.Add(this.lvDanhSachBan);
             this.Name = "uctGoiMon";
-            this.Size = new System.Drawing.Size(1150, 544);
+            this.Size = new System.Drawing.Size(1150, 591);
             this.Load += new System.EventHandler(this.uctGoiMon_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

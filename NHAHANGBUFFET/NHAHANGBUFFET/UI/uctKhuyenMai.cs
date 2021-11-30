@@ -23,7 +23,8 @@ namespace NHAHANGBUFFET.UI
             dskhuyenmai.DataSource = BLL.KhuyenMaiMod.FillDataSetKhuyenMai().Tables[0];
             dskhuyenmai.BorderStyle = BorderStyle.Fixed3D;
             dskhuyenmai.RowHeadersVisible = false;
-
+            lbDS.BackColor = Color.Transparent;
+            lbQL.BackColor = Color.Transparent;
         }
 
 

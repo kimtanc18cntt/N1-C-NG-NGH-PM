@@ -24,7 +24,8 @@ namespace NHAHANGBUFFET.UI
             dgvKhuVuc.DataSource = BLL.KhuVucMod.FillDataSetKhuVuc().Tables[0];
             dgvKhuVuc.BorderStyle = BorderStyle.Fixed3D;
             dgvKhuVuc.RowHeadersVisible = false;
-
+            lbQL.BackColor = Color.Transparent;
+            lbTT.BackColor = Color.Transparent;
         }
       
 

@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace NHAHANGBUFFET.UI
@@ -23,7 +24,8 @@ namespace NHAHANGBUFFET.UI
             dsThucDon.DataSource = BLL.ThucDonMod.FillDataSetThucDon().Tables[0];
             dsThucDon.BorderStyle = BorderStyle.Fixed3D;
             dsThucDon.RowHeadersVisible = false;
-
+            lbDstd.BackColor = Color.Transparent;
+            lbQLTD.BackColor = Color.Transparent;
         }
 
 

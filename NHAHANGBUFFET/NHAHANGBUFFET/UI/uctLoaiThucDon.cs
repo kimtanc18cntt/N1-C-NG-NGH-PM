@@ -23,6 +23,8 @@ namespace NHAHANGBUFFET.UI
             dsthucdon.DataSource = BLL.LoaiThucDonMod .FillDataSetLoaiThucDon().Tables[0];
             dsthucdon.BorderStyle = BorderStyle.Fixed3D;
             dsthucdon.RowHeadersVisible = false;
+            lbDS.BackColor = Color.Transparent;
+            lbQL.BackColor = Color.Transparent;
 
         }
 

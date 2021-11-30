@@ -25,6 +25,8 @@ namespace NHAHANGBUFFET.UI
             dsthuchi.BorderStyle = BorderStyle.Fixed3D;
             dsthuchi.Dock = DockStyle.Fill;
             dsthuchi.RowHeadersVisible = false;
+            label1.BackColor = Color.Transparent;
+            label2.BackColor = Color.Transparent;
 
         }
         void bingding()

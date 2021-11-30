@@ -23,7 +23,8 @@ namespace NHAHANGBUFFET.UI
             dsban.DataSource = BLL.BanMod.FillDataSetBan().Tables[0];
             dsban.BorderStyle = BorderStyle.Fixed3D;
             dsban.RowHeadersVisible = false;
-
+            lbInfor.BackColor = Color.Transparent;
+            lbDS.BackColor = Color.Transparent;
         }
 
 

@@ -228,9 +228,5 @@ namespace NHAHANGBUFFET.UI
             uctGoiMon_Load(sender, e);
         }
 
-        private void btnIn_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

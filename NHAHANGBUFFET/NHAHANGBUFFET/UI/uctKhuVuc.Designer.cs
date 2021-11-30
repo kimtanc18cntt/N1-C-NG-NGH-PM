@@ -40,8 +40,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtTenKhuVuc = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lbQL = new System.Windows.Forms.Label();
+            this.lbTT = new System.Windows.Forms.Label();
             this.btsua = new System.Windows.Forms.Button();
             this.btxoa = new System.Windows.Forms.Button();
             this.btluu = new System.Windows.Forms.Button();
@@ -163,30 +163,30 @@
             this.label4.Text = "Trạng Thái:";
             this.label4.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label5
+            // lbQL
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.Desktop;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label5.ForeColor = System.Drawing.Color.Green;
-            this.label5.Location = new System.Drawing.Point(60, 14);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(321, 36);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "QUẢN LÝ KHU VỰC";
+            this.lbQL.AutoSize = true;
+            this.lbQL.BackColor = System.Drawing.SystemColors.Desktop;
+            this.lbQL.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbQL.ForeColor = System.Drawing.Color.Red;
+            this.lbQL.Location = new System.Drawing.Point(60, 14);
+            this.lbQL.Name = "lbQL";
+            this.lbQL.Size = new System.Drawing.Size(321, 36);
+            this.lbQL.TabIndex = 4;
+            this.lbQL.Text = "QUẢN LÝ KHU VỰC";
             // 
-            // label6
+            // lbTT
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.SystemColors.Desktop;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label6.ForeColor = System.Drawing.Color.Green;
-            this.label6.Location = new System.Drawing.Point(502, 14);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(363, 36);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "THÔNG TIN  KHU VỰC";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.lbTT.AutoSize = true;
+            this.lbTT.BackColor = System.Drawing.SystemColors.Desktop;
+            this.lbTT.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbTT.ForeColor = System.Drawing.Color.Red;
+            this.lbTT.Location = new System.Drawing.Point(502, 14);
+            this.lbTT.Name = "lbTT";
+            this.lbTT.Size = new System.Drawing.Size(363, 36);
+            this.lbTT.TabIndex = 4;
+            this.lbTT.Text = "THÔNG TIN  KHU VỰC";
+            this.lbTT.Click += new System.EventHandler(this.label6_Click);
             // 
             // btsua
             // 
@@ -324,8 +324,8 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.grqlnhanvien);
             this.Controls.Add(this.dgvKhuVuc);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lbTT);
+            this.Controls.Add(this.lbQL);
             this.Controls.Add(this.bthuy);
             this.Controls.Add(this.btluu);
             this.Controls.Add(this.btxoa);
@@ -353,8 +353,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtTenKhuVuc;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbQL;
+        private System.Windows.Forms.Label lbTT;
         private System.Windows.Forms.Button btsua;
         private System.Windows.Forms.Button btxoa;
         private System.Windows.Forms.Button btluu;

@@ -15,6 +15,8 @@ namespace NHAHANGBUFFET.UI
         public uctMonDaGoi()
         {
             InitializeComponent();
+            
+
         }
         int flag = 0;
 
@@ -23,6 +25,7 @@ namespace NHAHANGBUFFET.UI
             HienThiDanhSachGM();
             bingding();
             dis_end(false);
+            SetLBBack();
         }
         public void HienThiDanhSachGM()
         {
@@ -30,6 +33,7 @@ namespace NHAHANGBUFFET.UI
             dgvGoiMon.Dock = DockStyle.Fill;
             dgvGoiMon.RowHeadersVisible = false;
             dgvGoiMon.BorderStyle = BorderStyle.Fixed3D;
+            
         }
         void bingding()
         {
@@ -223,6 +227,14 @@ namespace NHAHANGBUFFET.UI
             {
                 e.Handled = true;
             }
+        }
+        private void SetLBBack()
+        {
+            label1.BackColor = Color.Transparent;
+            label2.BackColor = Color.Transparent;
+            label3.BackColor = Color.Transparent;
+            label5.BackColor = Color.Transparent;
+            label7.BackColor = Color.Transparent;
         }
     }
 }

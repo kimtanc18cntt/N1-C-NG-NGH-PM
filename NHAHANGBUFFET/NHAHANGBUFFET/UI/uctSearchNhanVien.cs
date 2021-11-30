@@ -21,6 +21,8 @@ namespace NHAHANGBUFFET.UI
             cmbFind.Items.Clear();
             cmbFind.Items.Add("Id Nhân Viên");
             cmbFind.Items.Add("Tên Nhân Viên");
+            label1.BackColor = Color.Transparent;
+            label12.BackColor = Color.Transparent;
         }
 
         private void uctSearchNhanVien_Load(object sender, EventArgs e)

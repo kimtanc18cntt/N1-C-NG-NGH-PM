@@ -92,7 +92,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label1.Location = new System.Drawing.Point(11, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(113, 16);
@@ -124,9 +126,9 @@
             this.btnFind.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFind.ImageIndex = 7;
             this.btnFind.ImageList = this.imageList1;
-            this.btnFind.Location = new System.Drawing.Point(616, 14);
+            this.btnFind.Location = new System.Drawing.Point(616, 3);
             this.btnFind.Name = "btnFind";
-            this.btnFind.Size = new System.Drawing.Size(75, 23);
+            this.btnFind.Size = new System.Drawing.Size(113, 33);
             this.btnFind.TabIndex = 72;
             this.btnFind.Text = "Tìm kiếm";
             this.btnFind.UseVisualStyleBackColor = true;
@@ -144,7 +146,7 @@
             this.Controls.Add(this.cmbFind);
             this.Controls.Add(this.grDanhSachNV);
             this.Name = "uctSearchNhanVien";
-            this.Size = new System.Drawing.Size(812, 272);
+            this.Size = new System.Drawing.Size(904, 397);
             this.Load += new System.EventHandler(this.uctSearchNhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachNV)).EndInit();
             this.grDanhSachNV.ResumeLayout(false);

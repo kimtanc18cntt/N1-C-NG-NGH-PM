@@ -44,10 +44,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbInfor = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.cbTenKhuVuc = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lbDS = new System.Windows.Forms.Label();
             this.dsban = new System.Windows.Forms.DataGridView();
             this.IdBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenKhuVuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -228,17 +228,18 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Id Bàn:";
             // 
-            // label5
+            // lbInfor
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label5.ForeColor = System.Drawing.Color.Lime;
-            this.label5.Location = new System.Drawing.Point(43, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(271, 36);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "THÔNG TIN BÀN";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.lbInfor.AutoSize = true;
+            this.lbInfor.BackColor = System.Drawing.SystemColors.Control;
+            this.lbInfor.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbInfor.ForeColor = System.Drawing.Color.Red;
+            this.lbInfor.Location = new System.Drawing.Point(39, 16);
+            this.lbInfor.Name = "lbInfor";
+            this.lbInfor.Size = new System.Drawing.Size(271, 36);
+            this.lbInfor.TabIndex = 17;
+            this.lbInfor.Text = "THÔNG TIN BÀN";
+            this.lbInfor.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -259,17 +260,18 @@
             this.cbTenKhuVuc.Size = new System.Drawing.Size(130, 28);
             this.cbTenKhuVuc.TabIndex = 11;
             // 
-            // label7
+            // lbDS
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label7.ForeColor = System.Drawing.Color.Blue;
-            this.label7.Location = new System.Drawing.Point(508, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(282, 36);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "DANH SÁCH BÀN";
-            this.label7.Click += new System.EventHandler(this.label5_Click);
+            this.lbDS.AutoSize = true;
+            this.lbDS.BackColor = System.Drawing.Color.Black;
+            this.lbDS.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbDS.ForeColor = System.Drawing.Color.Red;
+            this.lbDS.Location = new System.Drawing.Point(542, 16);
+            this.lbDS.Name = "lbDS";
+            this.lbDS.Size = new System.Drawing.Size(282, 36);
+            this.lbDS.TabIndex = 17;
+            this.lbDS.Text = "DANH SÁCH BÀN";
+            this.lbDS.Click += new System.EventHandler(this.label5_Click);
             // 
             // dsban
             // 
@@ -327,9 +329,9 @@
             this.groupBox1.Controls.Add(this.txtTenBan);
             this.groupBox1.Controls.Add(this.cbTrangThai);
             this.groupBox1.Controls.Add(this.cbTenKhuVuc);
-            this.groupBox1.Location = new System.Drawing.Point(25, 59);
+            this.groupBox1.Location = new System.Drawing.Point(25, 68);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(310, 312);
+            this.groupBox1.Size = new System.Drawing.Size(310, 303);
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
             // 
@@ -350,8 +352,8 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dsban);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lbDS);
+            this.Controls.Add(this.lbInfor);
             this.Controls.Add(this.bthuy);
             this.Controls.Add(this.btluu);
             this.Controls.Add(this.btxoa);
@@ -383,10 +385,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbInfor;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cbTenKhuVuc;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lbDS;
         private System.Windows.Forms.DataGridView dsban;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdBan;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenKhuVuc;

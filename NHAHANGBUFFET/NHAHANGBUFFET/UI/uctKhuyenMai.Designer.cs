@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uctKhuyenMai));
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbQL = new System.Windows.Forms.Label();
             this.bthuy = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btluu = new System.Windows.Forms.Button();
@@ -45,7 +45,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lbDS = new System.Windows.Forms.Label();
             this.dskhuyenmai = new System.Windows.Forms.DataGridView();
             this.IdKM = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NoiDung = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,17 +57,17 @@
             this.grqlnhanvien.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label5
+            // lbQL
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.Desktop;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label5.ForeColor = System.Drawing.Color.Green;
-            this.label5.Location = new System.Drawing.Point(25, 19);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(383, 36);
-            this.label5.TabIndex = 32;
-            this.label5.Text = "QUẢN LÝ KHUYẾN MÃI";
+            this.lbQL.AutoSize = true;
+            this.lbQL.BackColor = System.Drawing.SystemColors.Desktop;
+            this.lbQL.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbQL.ForeColor = System.Drawing.Color.Red;
+            this.lbQL.Location = new System.Drawing.Point(25, 19);
+            this.lbQL.Name = "lbQL";
+            this.lbQL.Size = new System.Drawing.Size(383, 36);
+            this.lbQL.TabIndex = 32;
+            this.lbQL.Text = "QUẢN LÝ KHUYẾN MÃI";
             // 
             // bthuy
             // 
@@ -234,17 +234,17 @@
             this.label1.TabIndex = 22;
             this.label1.Text = "Id Khuyến mãi:";
             // 
-            // label6
+            // lbDS
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.SystemColors.Desktop;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label6.ForeColor = System.Drawing.Color.Green;
-            this.label6.Location = new System.Drawing.Point(466, 19);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(428, 36);
-            this.label6.TabIndex = 32;
-            this.label6.Text = "DANH SÁCH KHUYẾN MÃI";
+            this.lbDS.AutoSize = true;
+            this.lbDS.BackColor = System.Drawing.SystemColors.Desktop;
+            this.lbDS.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbDS.ForeColor = System.Drawing.Color.Red;
+            this.lbDS.Location = new System.Drawing.Point(466, 19);
+            this.lbDS.Name = "lbDS";
+            this.lbDS.Size = new System.Drawing.Size(428, 36);
+            this.lbDS.TabIndex = 32;
+            this.lbDS.Text = "DANH SÁCH KHUYẾN MÃI";
             // 
             // dskhuyenmai
             // 
@@ -318,8 +318,8 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.grqlnhanvien);
             this.Controls.Add(this.dskhuyenmai);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lbDS);
+            this.Controls.Add(this.lbQL);
             this.Controls.Add(this.bthuy);
             this.Controls.Add(this.btluu);
             this.Controls.Add(this.btxoa);
@@ -338,7 +338,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbQL;
         private System.Windows.Forms.Button bthuy;
         private System.Windows.Forms.Button btluu;
         private System.Windows.Forms.Button btxoa;
@@ -352,7 +352,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbDS;
         private System.Windows.Forms.DataGridView dskhuyenmai;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdKM;
         private System.Windows.Forms.DataGridViewTextBoxColumn NoiDung;

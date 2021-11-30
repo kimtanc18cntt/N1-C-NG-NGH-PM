@@ -272,7 +272,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.ForeColor = System.Drawing.Color.Green;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label1.Location = new System.Drawing.Point(12, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(314, 32);
@@ -447,7 +447,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.ForeColor = System.Drawing.Color.Green;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label2.Location = new System.Drawing.Point(479, 3);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(355, 32);
@@ -472,7 +472,7 @@
             // 
             // pnlDSNhanVien
             // 
-            this.pnlDSNhanVien.Location = new System.Drawing.Point(34, 285);
+            this.pnlDSNhanVien.Location = new System.Drawing.Point(3, 285);
             this.pnlDSNhanVien.Name = "pnlDSNhanVien";
             this.pnlDSNhanVien.Size = new System.Drawing.Size(761, 255);
             this.pnlDSNhanVien.TabIndex = 25;
@@ -480,9 +480,9 @@
             // button1
             // 
             this.button1.Image = global::NHAHANGBUFFET.Properties.Resources._222;
-            this.button1.Location = new System.Drawing.Point(884, 249);
+            this.button1.Location = new System.Drawing.Point(825, 285);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(233, 228);
+            this.button1.Size = new System.Drawing.Size(292, 255);
             this.button1.TabIndex = 26;
             this.button1.UseVisualStyleBackColor = true;
             // 
@@ -505,7 +505,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btxoa);
             this.Name = "uctNhanvien";
-            this.Size = new System.Drawing.Size(1150, 500);
+            this.Size = new System.Drawing.Size(1150, 620);
             this.Load += new System.EventHandler(this.uctNhanvien_Load_1);
             this.grqlnhanvien.ResumeLayout(false);
             this.grqlnhanvien.PerformLayout();

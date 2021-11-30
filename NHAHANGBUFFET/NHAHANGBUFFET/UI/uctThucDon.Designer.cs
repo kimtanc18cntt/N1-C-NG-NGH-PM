@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uctThucDon));
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbQLTD = new System.Windows.Forms.Label();
             this.bthuy = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btluu = new System.Windows.Forms.Button();
@@ -53,7 +53,7 @@
             this.txtSoLuongTon = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtDonGiaTon = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lbDstd = new System.Windows.Forms.Label();
             this.dsThucDon = new System.Windows.Forms.DataGridView();
             this.IdThucDon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenLoaiThucDon = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -71,16 +71,16 @@
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label5
+            // lbQLTD
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label5.ForeColor = System.Drawing.Color.Lime;
-            this.label5.Location = new System.Drawing.Point(42, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(349, 36);
-            this.label5.TabIndex = 32;
-            this.label5.Text = "QUẢN LÝ  THỰC ĐƠN";
+            this.lbQLTD.AutoSize = true;
+            this.lbQLTD.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbQLTD.ForeColor = System.Drawing.Color.Crimson;
+            this.lbQLTD.Location = new System.Drawing.Point(8, 17);
+            this.lbQLTD.Name = "lbQLTD";
+            this.lbQLTD.Size = new System.Drawing.Size(349, 36);
+            this.lbQLTD.TabIndex = 32;
+            this.lbQLTD.Text = "QUẢN LÝ  THỰC ĐƠN";
             // 
             // bthuy
             // 
@@ -89,7 +89,7 @@
             this.bthuy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bthuy.ImageIndex = 0;
             this.bthuy.ImageList = this.imageList1;
-            this.bthuy.Location = new System.Drawing.Point(193, 438);
+            this.bthuy.Location = new System.Drawing.Point(194, 462);
             this.bthuy.Name = "bthuy";
             this.bthuy.Size = new System.Drawing.Size(85, 40);
             this.bthuy.TabIndex = 13;
@@ -117,7 +117,7 @@
             this.btluu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btluu.ImageIndex = 6;
             this.btluu.ImageList = this.imageList1;
-            this.btluu.Location = new System.Drawing.Point(75, 438);
+            this.btluu.Location = new System.Drawing.Point(57, 462);
             this.btluu.Name = "btluu";
             this.btluu.Size = new System.Drawing.Size(85, 40);
             this.btluu.TabIndex = 12;
@@ -133,7 +133,7 @@
             this.btxoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btxoa.ImageIndex = 4;
             this.btxoa.ImageList = this.imageList1;
-            this.btxoa.Location = new System.Drawing.Point(230, 383);
+            this.btxoa.Location = new System.Drawing.Point(220, 409);
             this.btxoa.Name = "btxoa";
             this.btxoa.Size = new System.Drawing.Size(85, 40);
             this.btxoa.TabIndex = 11;
@@ -149,7 +149,7 @@
             this.btsua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btsua.ImageIndex = 2;
             this.btsua.ImageList = this.imageList1;
-            this.btsua.Location = new System.Drawing.Point(117, 383);
+            this.btsua.Location = new System.Drawing.Point(115, 409);
             this.btsua.Name = "btsua";
             this.btsua.Size = new System.Drawing.Size(85, 40);
             this.btsua.TabIndex = 10;
@@ -165,7 +165,7 @@
             this.btthem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btthem.ImageIndex = 3;
             this.btthem.ImageList = this.imageList1;
-            this.btthem.Location = new System.Drawing.Point(14, 383);
+            this.btthem.Location = new System.Drawing.Point(14, 409);
             this.btthem.Name = "btthem";
             this.btthem.Size = new System.Drawing.Size(85, 40);
             this.btthem.TabIndex = 9;
@@ -241,7 +241,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 16);
+            this.label1.Location = new System.Drawing.Point(21, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(122, 24);
             this.label1.TabIndex = 22;
@@ -320,16 +320,16 @@
             this.txtDonGiaTon.Size = new System.Drawing.Size(130, 26);
             this.txtDonGiaTon.TabIndex = 6;
             // 
-            // label10
+            // lbDstd
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label10.Location = new System.Drawing.Point(504, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(386, 36);
-            this.label10.TabIndex = 32;
-            this.label10.Text = "DANH SÁCH THỰC ĐƠN";
+            this.lbDstd.AutoSize = true;
+            this.lbDstd.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbDstd.ForeColor = System.Drawing.Color.Red;
+            this.lbDstd.Location = new System.Drawing.Point(498, 17);
+            this.lbDstd.Name = "lbDstd";
+            this.lbDstd.Size = new System.Drawing.Size(386, 36);
+            this.lbDstd.TabIndex = 32;
+            this.lbDstd.Text = "DANH SÁCH THỰC ĐƠN";
             // 
             // dsThucDon
             // 
@@ -345,7 +345,7 @@
             this.TonToiThieu,
             this.TrangThai});
             this.dsThucDon.GridColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.dsThucDon.Location = new System.Drawing.Point(439, 38);
+            this.dsThucDon.Location = new System.Drawing.Point(401, 56);
             this.dsThucDon.Name = "dsThucDon";
             this.dsThucDon.Size = new System.Drawing.Size(650, 347);
             this.dsThucDon.TabIndex = 33;
@@ -417,7 +417,7 @@
             this.groupBox1.Controls.Add(this.txtSoLuongTon);
             this.groupBox1.Controls.Add(this.txtDonViTinh);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.groupBox1.Location = new System.Drawing.Point(14, 38);
+            this.groupBox1.Location = new System.Drawing.Point(14, 56);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(340, 339);
             this.groupBox1.TabIndex = 34;
@@ -426,7 +426,7 @@
             // button2
             // 
             this.button2.Image = global::NHAHANGBUFFET.Properties.Resources._1111;
-            this.button2.Location = new System.Drawing.Point(439, 391);
+            this.button2.Location = new System.Drawing.Point(398, 409);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(653, 100);
             this.button2.TabIndex = 35;
@@ -440,15 +440,15 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dsThucDon);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lbDstd);
+            this.Controls.Add(this.lbQLTD);
             this.Controls.Add(this.bthuy);
             this.Controls.Add(this.btluu);
             this.Controls.Add(this.btxoa);
             this.Controls.Add(this.btsua);
             this.Controls.Add(this.btthem);
             this.Name = "uctThucDon";
-            this.Size = new System.Drawing.Size(1150, 500);
+            this.Size = new System.Drawing.Size(1150, 677);
             this.Load += new System.EventHandler(this.uctThucDon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dsThucDon)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -460,7 +460,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbQLTD;
         private System.Windows.Forms.Button bthuy;
         private System.Windows.Forms.Button btluu;
         private System.Windows.Forms.Button btxoa;
@@ -482,7 +482,7 @@
         private System.Windows.Forms.TextBox txtSoLuongTon;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtDonGiaTon;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lbDstd;
         private System.Windows.Forms.DataGridView dsThucDon;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdThucDon;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenLoaiThucDon;

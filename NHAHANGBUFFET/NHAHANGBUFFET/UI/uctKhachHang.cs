@@ -23,6 +23,14 @@ namespace NHAHANGBUFFET.UI
             dskhachhang.DataSource = BLL.KhachHangMod.FillDataSetKhachHang().Tables[0];
             dskhachhang.BorderStyle = BorderStyle.Fixed3D;
             dskhachhang.RowHeadersVisible = false;
+            label1.BackColor = Color.Transparent;
+            label2.BackColor = Color.Transparent;
+            label3.BackColor = Color.Transparent;
+            label4.BackColor = Color.Transparent;
+            label5.BackColor = Color.Transparent;
+            label6.BackColor = Color.Transparent;
+            label7.BackColor = Color.Transparent;
+            label8.BackColor = Color.Transparent;
 
         }
 

@@ -26,6 +26,9 @@ namespace NHAHANGBUFFET.UI
             dsnhanvien.BorderStyle = BorderStyle.Fixed3D;
             dsnhanvien.Dock = DockStyle.Fill;
             dsnhanvien.RowHeadersVisible = false;
+            label1.BackColor = Color.Transparent;
+            label2.BackColor = Color.Transparent;
+
 
         }
         void nhung(Control ctr)
